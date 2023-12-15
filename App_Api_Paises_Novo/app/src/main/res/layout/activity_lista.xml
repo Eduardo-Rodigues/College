@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#140E2C"
+    android:layout_height="match_parent">
+
+    <!-- Título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+        android:radius="16dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lista Pais"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!-- Linha de Títulos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineTitulo"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+        android:radius="16dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Código"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Descrição"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+    <!-- Linha divisória -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:id="@+id/lineLine"
+        android:layout_below="@+id/lineTitulo"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerViewPais"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineLine"
+        android:layout_marginTop="0dp"
+        android:background="#FFFFFF" />
+</RelativeLayout>
