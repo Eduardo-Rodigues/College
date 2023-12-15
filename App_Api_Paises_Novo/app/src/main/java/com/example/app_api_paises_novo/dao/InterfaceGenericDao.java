@@ -9,5 +9,5 @@ public interface InterfaceGenericDao {
     long insert (Pais_Model obj);
     long update (Pais_Model obj);
     ArrayList<Pais_Model> getAll();
-    Pais_Model getById(int id);
+
 }
